@@ -1,0 +1,32 @@
+{
+    "name": "electron-test",
+    "version": "1.0.0",
+    "description": "",
+    "author": {
+        "name": "electron-test",
+        "email": "niuyunsi@gmail.com"
+    },
+    "license": "ISC",
+    "homepage": "https://github.com/niuyunsi",
+    "main": "main.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "electron .",
+        "pack": "electron-builder --dir",
+        "dist": "electron-builder -ml"
+    },
+    "build": {
+        "appId": "yourappid",
+        "mac": {
+            "category": "public.app-category.developer-tools",
+            "target": "tar.gz"
+        },
+        "linux": {
+            "target": "deb"
+        }
+    },
+    "devDependencies": {
+        "electron": "^2.0.8",
+        "electron-builder": "^20.38.2"
+    }
+}
